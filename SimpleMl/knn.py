@@ -7,7 +7,7 @@ import numpy as np
 
 
 def dist(x,y):
-    return np.linalg.norm(x-y) # ||x-y||
+    return np.linalg.norm(x-y) # ||x-y|| = d(x,y)  = sqrt(∑(xi-yi)²) 
 
 # 1-NN simple example
 

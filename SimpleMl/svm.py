@@ -32,7 +32,8 @@ def calculate_cost_gradient(W,X_batch,Y_batch):
     
     distance=1-(Y_batch*np.dot(X_batch,W))
     dw=np.zeros(len(W))
-    for ind,d in enumerate(distance):
+    for ind,d in enumerate(distance): 
+        # if gradient is negative, this means its past the minimum. So we keep the weights the same
         if max(0,d)==0:
             di=W
         else:
@@ -45,6 +46,9 @@ def calculate_cost_gradient(W,X_batch,Y_batch):
 # 1. Find the gradient of cost function
 # 2. move opposite of the gradient by rate i.e w’ = w’ — ∝(∇J(w’))
 # repeat steps until convergence i.e we found w' where J(w) is smallest
+
+
+
 def sgd(features,outputs):
     max_epochs=5000
     nth=0

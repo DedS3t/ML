@@ -32,7 +32,7 @@ def logistic_regression(features,target,num_steps,learning_rate,add_intercept=Fa
         scores=np.dot(features,weights)
         predictions=sigmoid(scores)
 
-        # taking the derivative of the log likelihood equation(to maximize it) and changing to matrix form ∇ll=XT(Y-Predictions) 
+        # taking the derivative of the log likelihood equation(to maximize it) and changing to matrix form the gradient is ∇ll=XT(Y-Predictions) 
         output_error_signal=target-predictions
         gradient=np.dot(features.T,output_error_signal)
         weights+=learning_rate*gradient

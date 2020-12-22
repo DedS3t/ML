@@ -1,1 +1,1 @@
-This is a project that contains implementations of ML algorithms from scratch. It uses tutorials, online resources, etc to build them. The point is for me to gain a better understanding of ML and how it works inside. Feel free to check it out
+This is a project that contains implementations of ML algorithms from scratch. The point is to provide a deeper understanding of ML behind the scenes.
